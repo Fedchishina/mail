@@ -1,0 +1,18 @@
+{
+  "require": {
+    "twig/twig": "^2.0",
+    "illuminate/database": "^5.5",
+    "illuminate/pagination": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Routing\\": "routing/",
+      "Vendor\\Namespace\\": ""
+    },
+    "files": [
+      "config/database.php",
+      "routing/Router.php"
+    ]
+  }
+}

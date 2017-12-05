@@ -1,0 +1,37 @@
+{% extends "layouts/main.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Домены пользователей</h3>
+            </div>
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>
+                            Домен
+                        </th>
+                        <th>
+                            Количество email-ов
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {#{% for postLike in postLikes %}#}
+                        {#<tr>#}
+                            {#<td>#}
+                                {#{{ postLike.user.name }}#}
+                            {#</td>#}
+                            {#<td>#}
+                                {#{{ postLike.created_at }}#}
+                            {#</td>#}
+                        {#</tr>#}
+                    {#{% endfor %}#}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
