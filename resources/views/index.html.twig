@@ -19,16 +19,16 @@
                     </tr>
                     </thead>
                     <tbody>
-                    {#{% for postLike in postLikes %}#}
-                        {#<tr>#}
-                            {#<td>#}
-                                {#{{ postLike.user.name }}#}
-                            {#</td>#}
-                            {#<td>#}
-                                {#{{ postLike.created_at }}#}
-                            {#</td>#}
-                        {#</tr>#}
-                    {#{% endfor %}#}
+                    {% for domainName,domainCount in domainsCount %}
+                        <tr>
+                            <td>
+                                {{ domainName }}
+                            </td>
+                            <td>
+                                {{ domainCount }}
+                            </td>
+                        </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
             </div>
