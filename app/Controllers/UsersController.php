@@ -39,7 +39,7 @@ class UsersController extends Controller
     {
         $arrayNames = ['Света', 'Маша', 'Даша', 'Ира', 'Оля', 'Катя', 'Аня', 'Наташа', 'Вика', 'Саша'];
         $arrayDomains = ['gmail.com', 'yander.ru', 'mail.ru', 'rambler.ru'];
-        for ($i = 0; $i <= 20; $i++) {
+        for ($i = 0; $i < 20; $i++) {
             User::create([
                'name' => $arrayNames[rand(0,9)],
                'gender' => 1,
